@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+#counter{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+#counter .counter-up{
+  min-height: 50vh;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color:#eff2f7;
+}
+
+#counter .counter-up .content{
+  z-index: 0;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+#counter .counter-up .content .box{
+  //border: 1px dashed rgba(255,255,255,0.6);
+  width: calc(25% - 30px);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 20px;
+  background-color:white;
+  box-shadow: -4px -4px #ced2d9;
+}
+
+#counter .content .box .icon{
+  font-size: 48px;
+  color:#2c3c61;
+}
+#counter .content .box .num{
+  font-size: 50px;
+  font-weight: 500;
+  color: black;
+  font-family: sans-serif;
+}
+#counter .content .box .text{
+  font-weight: 400;
+  color:black;
+}
+@media screen and (max-width: 1036px) {
+  #counter .counter-up{
+    padding: 50px 50px 0 50px;
+  }
+  #counter .counter-up .content .box{
+    width: calc(50% - 30px);
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 580px) {
+  #counter .counter-up .content .box{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #counter .wrapper{
+    padding: 20px;
+  }
+  #counter .counter-up{
+    padding: 30px 20px 0 20px;
+  }
+}
